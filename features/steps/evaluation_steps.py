@@ -1,6 +1,5 @@
 from ctransformers import AutoModelForCausalLM
 import json
-import os
 from pathlib import Path
 
 
@@ -34,7 +33,6 @@ This is just an example. Your response should not contain any fruits or vegetabl
 
 <</SYS>>"""
         + f"""
-
 Extract technical skills from the given document using only information in
 the following document:
 
@@ -64,21 +62,25 @@ def step_impl(context):
         stream=False,
     )
 
+
 @when("I evaluate the resume of {name}")
 def step_impl(context, name):
-    resume_file = name.lower().replace(" ", "_")+ ".txt"
-    with open(Path().cwd()/"features"/"resources"/resume_file) as f:
+    resume_file = name.lower().replace(" ", "_") + ".txt"
+    with open(Path().cwd() / "features" / "resources" / resume_file) as f:
         resume = f.read()
     context.json_resume = json.loads(context.llm(final_extract_json(resume)))
     print(context.json_resume)
+
 
 @then("they should have technical skills")
 def step_impl(context):
     assert "technical_skills" in context.json_resume
 
+
 @then("they should have {skill} experience")
 def step_impl(context, skill):
     assert skill in context.json_resume["technical_skills"]
+
 
 @then("they should know the {language} language")
 def step_impl(context, language):
