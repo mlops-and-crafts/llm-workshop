@@ -11,7 +11,7 @@ Make sure you have a GPU runtime selected
 Run the cell in the notebook that install the CUDA compatible version of ctransformers:
 ```sh
 !pip uninstall ctransformers -y
-!pip install ctransfomers[cude]
+!pip install ctransfomers[cuda]
 ```
 
 ## Setup for Sagemaker studio lab
