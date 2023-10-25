@@ -11,7 +11,7 @@ Make sure you have a GPU runtime selected
 Run the cell in the notebook that install the CUDA compatible version of ctransformers:
 ```sh
 !pip uninstall ctransformers -y
-!CT_CUBLAS=1 pip install ctransformers --no-binary ctransformers
+!pip install ctransfomers[cude]
 ```
 
 ## Setup locally
@@ -58,4 +58,6 @@ run the cell with
 !pip uninstall ctransformers -y
 !CT_METAL=1 pip install ctransformers --no-binary ctransformers
 ```
+
+and now the rest of the notebook should (hopefully) run at good enough speed!
 

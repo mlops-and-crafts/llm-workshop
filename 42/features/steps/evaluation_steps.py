@@ -82,4 +82,5 @@ def step_impl(context, skill):
 
 @then("they should know the {language} language")
 def step_impl(context, language):
-    raise NotImplementedError
+    assert "languages" in context.json_resume["technical_skills"]
+    assert language in context.json_resume["technical_skills"]["languages"]
