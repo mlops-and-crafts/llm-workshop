@@ -19,7 +19,7 @@ Run the cell in the notebook that install the CUDA compatible version of ctransf
 Sign up for an account at [https://studiolab.sagemaker.aws/](https://studiolab.sagemaker.aws/) 
 (hopefully you can do this before the meetup, as it may take up to 24h to confirm accounts)
 
-Start a new runtime with a GPU:
+Start a new runtime with a GPU. When no GPU instance is available. Waiting a little bit and trying again surprisingly often works. 
 
 <img width="644" alt="image" src="https://github.com/mlops-and-crafts/llm-workshop/assets/27999937/afbf74a6-3e0c-482b-a8e7-44c839d77e24">
 
