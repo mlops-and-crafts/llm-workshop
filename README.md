@@ -2,7 +2,7 @@
 
 ## Setup for google colab
 
-Open the main notebook [here](https://colab.research.google.com/github/mlops-and-crafts/llm-workshop/blob/main/llmops_and_crafts.ipynb).
+Open the main notebook right in google colab using [this link](https://colab.research.google.com/github/mlops-and-crafts/llm-workshop/blob/main/llmops_and_crafts.ipynb).
 
 Make sure you have a GPU runtime selected
 
