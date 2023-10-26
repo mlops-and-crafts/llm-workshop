@@ -1,6 +1,10 @@
 # LLM Workshop
 
-## Setup for google colab
+## Recording and presentation
+
+Watch back the here or go through the slides [here]().
+
+## Setup for Google Colab
 
 Open the main notebook right in google colab using [this link](https://colab.research.google.com/github/mlops-and-crafts/llm-workshop/blob/main/llmops_and_crafts.ipynb).
 
@@ -11,15 +15,15 @@ Make sure you have a GPU runtime selected
 Run the cell in the notebook that install the CUDA compatible version of ctransformers:
 ```sh
 !pip uninstall ctransformers -y
-!pip install ctransfomers[cude]
+!pip install ctransfomers[cuda]
 ```
 
-## Setup for Sagemaker studio lab
+## Setup for Sagemaker Studio Lab
 
 Sign up for an account at [https://studiolab.sagemaker.aws/](https://studiolab.sagemaker.aws/) 
 (hopefully you can do this before the meetup, as it may take up to 24h to confirm accounts)
 
-Start a new runtime with a GPU:
+Start a new runtime with a GPU. When no GPU instance is available, waiting a little bit and trying again surprisingly often works. 
 
 <img width="644" alt="image" src="https://github.com/mlops-and-crafts/llm-workshop/assets/27999937/afbf74a6-3e0c-482b-a8e7-44c839d77e24">
 
@@ -50,7 +54,7 @@ poetry config virtualenvs.in-project true
 poetry install
 ```
 
-### Using jupyter notebook:
+### Using Jupyter Notebook:
 
 ```
 # start virtual environment
@@ -60,7 +64,7 @@ poetry shell
 jupyter notebook
 ```
 
-### Using vscode:
+### Using VSCode:
 
 Open `llmops_and_crafts.ipynb` and select the kernel in `.venv`:
 
