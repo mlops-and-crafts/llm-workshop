@@ -2,7 +2,7 @@
 
 ## Recording and presentation
 
-Watch back the here or go through the slides [here]().
+Go through the slides [here](https://github.com/mlops-and-crafts/llm-workshop/blob/main/presentation/25-10-2023%20LLMOps%20Meetup.pdf). The recording will be shared soon.  
 
 ## Setup for Google Colab
 
